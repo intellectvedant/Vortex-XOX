@@ -1,0 +1,121 @@
+/* css reset */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 0px;
+}
+
+
+/* nav section */
+
+#navbar{
+    flex-direction: column;
+}
+
+#logo{
+    height: 50px;
+}
+
+#logo img{
+    height: 40px;
+}
+
+.nav-btn{
+    margin: 1px 1px;
+    padding: 2px 12px;
+    font-size: 1.3rem
+}
+
+
+/* home section */
+
+#home{
+    flex-direction: column;
+}
+
+.homeButton{
+    margin: 9px 56px;
+    padding: 30px 32px;
+}
+
+/* rules section */
+
+
+#rules{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    padding: 17px;
+}
+
+.box{
+    margin: 9px;
+    padding: 8px;
+}
+
+/* game section */
+
+.game-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 15px;
+}
+
+.game-info h1{
+    padding-top: 10vh;
+    font-size: 1.5rem;
+}
+
+.info{
+    font-size: 1.1rem;
+}
+
+/* footer section */
+
+footer{
+    font-size: 0.9rem;
+}
+
+/* ultility section */
+
+.primary{
+    font-size: 2rem;
+    margin: 1px 0px;
+    padding: 3px 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    
+
+}
+
+.secondary{
+    font-size: 1.4rem;
+    margin: 1px 0px;
+    padding: 3px 4px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bolder;
+}
+
+.tertiary{
+    padding: 6px;
+    font-size: 0.9rem;
+    margin: 1px 0px;
+    padding: 3px 4px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bolder;
+}
+
+.center{
+    text-align: center;
+}

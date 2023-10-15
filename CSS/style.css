@@ -1,0 +1,366 @@
+/* css rest */
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* css variables */
+:root{
+    --navbar-height: 0px;
+
+}
+
+
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: sticky;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.90;
+    height: 100px;
+}
+
+#logo{
+    margin: 1px 2px;
+    padding: 1px 2px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+#logo img{
+    height: 45px
+}
+
+.nav-btn{
+    margin: 2px 3px;
+    padding: 6px 13px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bolder;
+    color: black;   
+}
+
+.nav-btn:hover{
+    background-color: greenyellow;
+    color: black;
+    font-weight: bolder;
+
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 93vh;
+}
+
+#home::before{
+    content: "";
+    background: url("../Img/bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.52;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 7px;
+    padding: 10px 40px;
+
+}
+
+.homeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 58px 118px;
+    padding: 64px 105px;
+    z-index: inherit;
+
+
+}
+
+.homeButton a{
+    text-decoration: none;
+    color: black;
+}
+
+.homebtn1{
+    cursor: pointer;
+    margin: 7px 52px;
+    padding: 4px;
+    width: 90%;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: black;
+    /* z-index: 2; */
+
+
+}
+
+.homebtn2{
+    cursor: pointer;
+    margin: 7px 52px;
+    padding: 4px;
+    width: 90%;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: black;
+    /* z-index: 1; */
+
+}
+
+
+.homebtn1:hover{
+    background-color: greenyellow;
+    color: white;
+    font-weight: bolder;
+}
+
+.homebtn2:hover{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* rules section */
+
+#rules-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: 93vh;
+
+}
+
+#rules-container::before{
+    content: "";
+    background: url("../Img/bg2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.40;
+}
+
+#rules{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 31px;
+    padding: 11px 31px;
+
+}
+
+.box{
+    border: 3px solid black;
+    margin: 15px 60px;
+    padding: 30px 62px;
+}
+
+
+/* gamebox section */
+#gamebox{
+    position: relative;
+    min-height: 93vh;
+}
+
+#gamebox::before{
+    content: "";
+    background: url("../Img/bg3.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.37;
+}
+
+#gamebox h1{
+    padding-top: 15vh;
+
+}
+
+.game-info h1{
+    padding-top: 15vh;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+
+}
+
+.game-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#gamebox::before{
+    background-color: beige;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bold;
+    padding: 40px;
+
+}
+
+.boxy{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxy:hover{
+    background-color:rgba(255, 255, 255, 0.269);
+}
+
+.game-info{
+    padding: 0px 34px;
+}
+
+.gameicon{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+#reset{
+    cursor: pointer;
+    margin: 15px 1px;
+    padding: 4px;
+    width: 48%;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: black;
+}
+
+#reset:hover{
+    background-color: greenyellow;
+    color: black;
+    font-weight: bolder;
+}
+
+.info{
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+
+/* footer section */
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    padding: 4px;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+/* utility class section */
+
+.primary{
+    font-size: 3rem;
+    margin: 1px 0px;
+    padding: 3px 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    
+
+}
+
+.secondary{
+    font-size: 1.7rem;
+    margin: 1px 0px;
+    padding: 3px 4px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bolder;
+}
+
+.tertiary{
+    padding: 6px;
+    font-size: 0.9rem;
+    margin: 1px 0px;
+    padding: 3px 4px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bolder;
+}
+
+.center{
+    text-align: center;
+}
+
+.bl0{
+    border-left: 0;
+}
+
+.br0{
+    border-right: 0;
+}
+
+.bt0{
+    border-top: 0;
+}
+
+.bb0{
+    border-bottom: 0;
+}
